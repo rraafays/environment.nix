@@ -8,6 +8,7 @@
     du-dust
     duf
     gh
+    gh-screensaver
     git
     killall
     lunarvim
