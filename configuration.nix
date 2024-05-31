@@ -11,6 +11,7 @@
     gh-screensaver
     git
     killall
+    libqalculate
     lunarvim
     nix-your-shell
     p7zip
