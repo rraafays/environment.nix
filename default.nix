@@ -16,6 +16,7 @@
     nix-your-shell
     p7zip
     rename
+    scriptisto
     unzip
     wget
     xxd
