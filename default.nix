@@ -2,62 +2,54 @@
 
 {
   environment.systemPackages = with pkgs; [
-    # system tools
+    bat
     btop
+    clang
+    csharp-ls
     detox
+    direnv
     du-dust
     duf
+    elmPackages.elm-language-server
+    fd
     gh
     gh-screensaver
     git
-    killall
-    libqalculate
-    lunarvim
-    nix-your-shell
-    p7zip
-    rename
-    scriptisto
-    unzip
-    wget
-    xxd
-
-    # replacement tools
-    bat
-    fd
-    lsd
-    ripgrep
-    uutils-coreutils-noprefix
-
-    # prompt enhancements
-    direnv
-    starship
-    tmux
-    zoxide
-
-    # formatters
-    nixpkgs-fmt
-    nodePackages.prettier
-    nodePackages.sql-formatter
-    rustfmt
-    shfmt
-    stylua
-    xmlformat
-
-    # language servers
-    clang
-    csharp-ls
-    elmPackages.elm-language-server
     jdt-language-server
+    killall
     lemminx
+    libqalculate
+    lsd
     ltex-ls
     lua-language-server
+    lunarvim
     nil
+    nix-your-shell
+    nixpkgs-fmt
     nodePackages.bash-language-server
+    nodePackages.prettier
+    nodePackages.sql-formatter
     nodePackages.typescript-language-server
+    p7zip
     python311Packages.python-lsp-server
+    python3
+    rename
+    ripgrep
     rust-analyzer
+    rustfmt
+    scriptisto
+    shfmt
     sqls
+    starship
+    stylua
     taplo
+    tmux
+    unzip
+    uutils-coreutils-noprefix
     vscode-langservers-extracted
+    wget
+    xmlformat
+    xxd
+    zoxide
   ];
 }
