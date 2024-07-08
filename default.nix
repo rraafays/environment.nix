@@ -13,7 +13,6 @@
     elmPackages.elm-language-server
     fd
     gh
-    gh-screensaver
     git
     jdt-language-server
     killall
