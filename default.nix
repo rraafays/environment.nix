@@ -19,6 +19,7 @@
     killall
     lemminx
     libqalculate
+    libreoffice
     lsd
     ltex-ls
     lua-language-server
