@@ -3,6 +3,7 @@
 {
   environment.systemPackages = with pkgs; [
     bat
+    brightnessctl
     btop
     clang
     csharp-ls
