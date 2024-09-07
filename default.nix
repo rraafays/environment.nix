@@ -4,6 +4,7 @@
   environment.systemPackages = with pkgs; [
     bat
     brightnessctl
+	clang
     btop
     detox
     direnv
@@ -15,7 +16,6 @@
     killall
     libreoffice
     lsd
-    lunarvim
     unstable.neovim
     nix-your-shell
     p7zip
