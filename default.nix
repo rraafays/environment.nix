@@ -16,6 +16,7 @@
     libreoffice
     lsd
     lunarvim
+    unstable.neovim
     nix-your-shell
     p7zip
     python3
