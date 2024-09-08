@@ -4,7 +4,7 @@
   environment.systemPackages = with pkgs; [
     bat
     brightnessctl
-    clang
+    gcc
     btop
     detox
     direnv
