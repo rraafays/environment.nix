@@ -28,6 +28,7 @@
     stylua
     tmux
     unzip
+    usbutils
     uutils-coreutils-noprefix
     wget
     zoxide
