@@ -13,7 +13,6 @@
     duf
     fd
     gh
-    git
     killall
     libreoffice
     lsd
