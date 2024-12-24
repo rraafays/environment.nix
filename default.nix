@@ -26,6 +26,7 @@
     starship
     stylua
     tmux
+    unrar
     unzip
     usbutils
     uutils-coreutils-noprefix
