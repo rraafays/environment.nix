@@ -12,6 +12,7 @@
     du-dust
     duf
     fd
+    file
     gh
     killall
     libreoffice
