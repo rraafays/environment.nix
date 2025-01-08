@@ -5,7 +5,6 @@
     android-file-transfer
     bat
     brightnessctl
-    gcc
     btop
     detox
     direnv
@@ -13,11 +12,11 @@
     duf
     fd
     file
+    gcc
     gh
     killall
     libreoffice
     lsd
-    unstable.neovim
     nix-your-shell
     p7zip
     python3
@@ -28,10 +27,12 @@
     stylua
     tmux
     unrar
+    unstable.neovim
     unzip
     usbutils
     uutils-coreutils-noprefix
     wget
+    woeusb-ng
     zoxide
   ];
 }
