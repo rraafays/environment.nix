@@ -1,6 +1,7 @@
 { pkgs, ... }:
 
 {
+  imports = [ ./restic.nix ];
   environment.systemPackages = with pkgs; [
     android-file-transfer
     bat
