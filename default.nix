@@ -12,6 +12,7 @@
     du-dust
     duf
     fd
+    ffmpeg
     file
     gcc
     gh
