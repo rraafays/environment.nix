@@ -1,10 +1,11 @@
-{ lib, pkgs, ... }:
+{ pkgs, ... }:
 
 {
-  environment.systemPackages = with pkgs;
+  environment.systemPackages =
+    with pkgs;
     [
       android-file-transfer
-      nixfmt
+      nixfmt-rfc-style
       bat
       btop
       direnv
@@ -32,11 +33,17 @@
       uutils-coreutils-noprefix
       wget
       zoxide
-    ] ++ lib.optional stdenv.isLinux [
-      woeusb-ng
-      usbutils
-      libreoffice
-      detox
-      brightnessctl
-    ];
+    ]
+    ++ (
+      if pkgs.stdenv.isLinux then
+        [
+          woeusb-ng
+          usbutils
+          libreoffice
+          detox
+          brightnessctl
+        ]
+      else
+        [ ]
+    );
 }
