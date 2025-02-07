@@ -44,6 +44,8 @@
           brightnessctl
         ]
       else
-        [ ]
+        [
+          jankyborders
+        ]
     );
 }
