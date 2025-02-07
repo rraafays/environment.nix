@@ -5,7 +5,6 @@
     with pkgs;
     [
       android-file-transfer
-      nixfmt-rfc-style
       bat
       btop
       direnv
@@ -16,9 +15,11 @@
       file
       gcc
       gh
+      git
       killall
       lsd
       nix-your-shell
+      nixfmt-rfc-style
       p7zip
       python3
       rename
@@ -37,11 +38,11 @@
     ++ (
       if pkgs.stdenv.isLinux then
         [
-          woeusb-ng
-          usbutils
-          libreoffice
-          detox
           brightnessctl
+          detox
+          libreoffice
+          usbutils
+          woeusb-ng
         ]
       else
         [
