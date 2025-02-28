@@ -16,6 +16,7 @@
       gcc
       gh
       git
+      glow
       killall
       lsd
       nix-your-shell
