@@ -1,6 +1,8 @@
 { pkgs, ... }:
 
 {
+  imports = [ ./toolset.nix ];
+
   environment.systemPackages =
     with pkgs;
     [
