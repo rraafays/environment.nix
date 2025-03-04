@@ -18,7 +18,6 @@
       gcc
       gh
       git
-      glow
       killall
       lsd
       nix-your-shell
@@ -37,6 +36,7 @@
       uutils-coreutils-noprefix
       wget
       zoxide
+      zk
     ]
     ++ (
       if pkgs.stdenv.isLinux then

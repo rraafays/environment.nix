@@ -25,7 +25,7 @@
       text/*)
       	case $(basename "$file") in
       	*.md)
-      		glow --style ~/.config/glow/default.json "$file"
+      		${glow}/bin/glow --style ~/.config/glow/default.json "$file"
       		;;
       	*)
       		cat "$file"
