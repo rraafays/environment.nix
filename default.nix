@@ -37,6 +37,7 @@
       wget
       zoxide
       zk
+      nodejs-slim
     ]
     ++ (
       if pkgs.stdenv.isLinux then
