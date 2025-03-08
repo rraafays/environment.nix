@@ -44,9 +44,9 @@
         [
           brightnessctl
           detox
-          libreoffice
           usbutils
           woeusb-ng
+          kdiskmark
         ]
       else
         [
