@@ -84,6 +84,20 @@
       fi
     '')
 
+    (writeShellScriptBin "work" ''
+      #!${stdenv.shell}
+      branch_name=$(git rev-parse --abbrev-ref HEAD 2>/dev/null)
+      if [ $? -eq 128 ]; then
+      	echo "must be in a git repository to work!" >&2
+      	exit 1
+      fi
+      if [ -z "$1" ]; then
+      	${fasole}/bin/fasole "$branch_name.md"
+      else
+      	${fasole}/bin/fasole "$@"
+      fi
+    '')
+
     (writeShellScriptBin "edit" ''
       #!${stdenv.shell}
       ${unstable.neovim}/bin/nvim "$@"
