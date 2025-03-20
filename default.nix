@@ -31,7 +31,6 @@
       stylua
       tmux
       unrar
-      unstable.neovim
       unzip
       uutils-coreutils-noprefix
       wget
