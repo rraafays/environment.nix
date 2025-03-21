@@ -49,7 +49,6 @@
         ]
       else
         [
-          jankyborders
         ]
     );
 }
