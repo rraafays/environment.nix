@@ -107,5 +107,15 @@
       #!${stdenv.shell}
       ${unstable.neovim}/bin/nvim NOTE.md
     '')
+
+    (writeShellScriptBin "system-info" ''
+      #!${stdenv.shell}
+      ${fastfetch}/bin/fastfetch "$@"
+    '')
+
+    (writeShellScriptBin "repo-info" ''
+      #!${stdenv.shell}
+      ${onefetch}/bin/onefetch "$@"
+    '')
   ];
 }
