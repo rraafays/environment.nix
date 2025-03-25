@@ -115,7 +115,8 @@
 
     (writeShellScriptBin "repo-info" ''
       #!${stdenv.shell}
-      ${onefetch}/bin/onefetch "$@"
+      ${onefetch}/bin/onefetch -d churn commits lines-of-code --no-color-palette --true-color never
+      ${git}/bin/git status
     '')
   ];
 }
