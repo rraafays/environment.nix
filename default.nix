@@ -22,6 +22,7 @@
       lsd
       nix-your-shell
       nixfmt-rfc-style
+      nodejs-slim
       p7zip
       python3
       rename
@@ -34,9 +35,8 @@
       unzip
       uutils-coreutils-noprefix
       wget
-      zoxide
       zk
-      nodejs-slim
+      zoxide
     ]
     ++ (
       if pkgs.stdenv.isLinux then

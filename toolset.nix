@@ -27,6 +27,9 @@
       	*.md)
       		${glow}/bin/glow --style ~/.config/glow/default.json "$file"
       		;;
+      	*.csv)
+      		${csvtool}/bin/csvtool readable "$file" | less
+      		;;
       	*)
       		cat "$file"
       		;;
