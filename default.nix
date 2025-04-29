@@ -20,8 +20,6 @@
       git
       killall
       lsd
-      nix-your-shell
-      nixfmt-rfc-style
       nodejs-slim
       p7zip
       python3
