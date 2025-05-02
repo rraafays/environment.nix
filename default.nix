@@ -15,6 +15,7 @@
       fd
       ffmpeg
       file
+      fzf
       gcc
       gh
       git
