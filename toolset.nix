@@ -32,7 +32,7 @@
             files_to_move="$files_to_move, POSIX file \"$abs_path\""
           done
           files_to_move=''${files_to_move#, }
-          osascript -e "tell application \"Finder\" to delete {$files_to_move}"
+          osascript -e "tell application \"Finder\" to delete {$files_to_move}" &> /dev/null
         else
           ${trash-cli}/bin/trash --trash-dir=$HOME/.Trash "$@"
         fi
