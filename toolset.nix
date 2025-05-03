@@ -25,7 +25,17 @@
       elif [ "$1" = "-r" ]; then
         ${trash-cli}/bin/trash-restore --trash-dir=$HOME/.Trash "''${@:2}"
       else
-        ${trash-cli}/bin/trash --trash-dir=$HOME/.Trash "$@"
+        if [ "$(uname)" = "Darwin" ]; then
+          files_to_move=""
+          for file in "$@"; do
+            abs_path=$(cd "$(dirname "$file")" && pwd)/$(basename "$file")
+            files_to_move="$files_to_move, POSIX file \"$abs_path\""
+          done
+          files_to_move=''${files_to_move#, }
+          osascript -e "tell application \"Finder\" to delete {$files_to_move}"
+        else
+          ${trash-cli}/bin/trash --trash-dir=$HOME/.Trash "$@"
+        fi
       fi
     '')
 
