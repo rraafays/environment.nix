@@ -25,11 +25,13 @@
       nodejs-slim
       p7zip
       python3
+      rates
       rename
       ripgrep
       shfmt
       starship
       stylua
+      substudy
       tmux
       unrar
       unzip
