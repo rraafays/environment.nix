@@ -2,14 +2,19 @@
 
 {
   environment.systemPackages = with pkgs; [
+    (writeShellScriptBin "sudoedit" ''
+      #!${stdenv.shell}
+      sudo -e "$@"
+    '')
+
     (writeShellScriptBin "edit" ''
       #!${stdenv.shell}
-      ${unstable.neovim}/bin/nvim "$@"
+      ${neovim}/bin/nvim "$@"
     '')
 
     (writeShellScriptBin "note" ''
       #!${stdenv.shell}
-      ${unstable.neovim}/bin/nvim NOTE.md
+      ${neovim}/bin/nvim NOTE.md
     '')
 
     (writeShellScriptBin "trash" ''
