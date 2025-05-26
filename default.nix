@@ -28,6 +28,7 @@
       rates
       rename
       ripgrep
+      rsync
       shfmt
       starship
       stylua
