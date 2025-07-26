@@ -1,7 +1,8 @@
 { pkgs, ... }:
 
 {
-  environment.systemPackages = with pkgs;
+  environment.systemPackages =
+    with pkgs;
     [
       (writeShellScriptBin "sudoedit" ''
         #!${stdenv.shell}
@@ -149,5 +150,6 @@
             ;;
         esac
       '')
-    ] ++ (if pkgs.stdenv.isLinux then [ ] else [ ]);
+    ]
+    ++ (if pkgs.stdenv.isLinux then [ ] else [ ]);
 }

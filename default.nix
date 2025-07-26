@@ -3,7 +3,8 @@
 {
   imports = [ ./toolset.nix ];
 
-  environment.systemPackages = with pkgs;
+  environment.systemPackages =
+    with pkgs;
     [
       android-file-transfer
       bat
