@@ -21,6 +21,7 @@
       git
       killall
       lsd
+      mprocs
       nix-your-shell
       nodejs-slim
       p7zip
